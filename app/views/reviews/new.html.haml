@@ -1,0 +1,19 @@
+= form_for [@restraunt, @review] do |f|
+
+  -if @review.errors.full_messages.any?
+    %p You had some errors:
+    %ul
+      -@review.errors.full_messages.each do |measage|
+        %li= measage
+
+  %p
+    = f.label :rating
+    = f.text_field :rating
+
+  %p
+    = f.label :body
+    = f.text_field :body
+
+  %p
+
+    = f.submit

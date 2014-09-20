@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Restraunt.create(name: "Bob's", address: "555 Bob Dr.", city: "Bobville", state: "Bobtucky", zip_code: "555555", description: "The best. EVER.", category: "Goodness")

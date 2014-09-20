@@ -1,0 +1,5 @@
+%ul
+  - @restraunts.each do |restraunt|
+    %li= link_to restraunt.name, restraunt_path(restraunt)
+
+= link_to "Create new restraunt", new_restraunt_path

@@ -1,0 +1,17 @@
+%h1= @restraunt.name
+
+%h2= "#{@restraunt.address}, #{@restraunt.city}, #{@restraunt.state}, #{@restraunt.zip_code}"
+
+%h3= @restraunt.category
+
+%p= @restraunt.description
+
+%ul
+  - @restraunt.reviews.each do |review|
+    %li
+      = review.rating
+      %p= review.body
+
+
+= link_to "Write a review!", new_restraunt_review_path(@restraunt)
+
